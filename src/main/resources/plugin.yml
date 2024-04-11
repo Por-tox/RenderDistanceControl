@@ -1,0 +1,9 @@
+name: renderDistanceControl
+version: '${project.version}'
+main: me.portox.renderdistancecontrol.RenderDistanceControl
+api-version: '1.20'
+
+permissions:
+  renderdistancecontrol:
+    premium:
+      premiumrenderdistance: false

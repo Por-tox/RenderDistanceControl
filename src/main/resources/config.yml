@@ -1,0 +1,7 @@
+# render distance for player with renderdistancecontrol.premium.premiumrenderdistance permission
+
+PremiumPlayerRenderDistance: 16
+
+# rendering distance for players flying with elytra
+
+ElytraRenderDistance: 4
