@@ -68,17 +68,17 @@ public final class RenderDistanceControl extends JavaPlugin {
         if (player.hasPermission("renderdistancecontrol.premium.premiumrenderdistance")) {
             player.setViewDistance(premiumPlayerRenderDistance);
             player.setSimulationDistance(premiumPlayerRenderDistance);
-            getLogger().info("set " + player.getName() + "'s render|simulation distance to " + premiumPlayerRenderDistance);
+//            getLogger().info("set " + player.getName() + "'s render|simulation distance to " + premiumPlayerRenderDistance);
         } else {
             player.setViewDistance(getServer().getViewDistance());
-            getLogger().info("set " + player.getName() + "'s render distance to default server rendering|simulation distance");
+//            getLogger().info("set " + player.getName() + "'s render distance to default server rendering|simulation distance");
         }
     }
 
     private void setElytraViewDistance(Player player) {
         player.setViewDistance(elytraRenderDistance);
         player.setSimulationDistance(elytraRenderDistance);
-        getLogger().info(player.getName() + " is flying, set render|simulation distance to " + elytraRenderDistance);
+//        getLogger().info(player.getName() + " is flying, set render|simulation distance to " + elytraRenderDistance);
     }
 
     @Override
