@@ -31,10 +31,6 @@ public final class RenderDistanceControl extends JavaPlugin {
         premiumPlayerRenderDistance = config.getInt("PremiumPlayerRenderDistance");
         elytraRenderDistance = config.getInt("ElytraRenderDistance");
 
-        Logger logger = this.getLogger();
-
-        logger.info("enabled!");
-
         for (Player player : getServer().getOnlinePlayers()) {
             setViewDistance(player);
         }
@@ -79,11 +75,5 @@ public final class RenderDistanceControl extends JavaPlugin {
         player.setViewDistance(elytraRenderDistance);
         player.setSimulationDistance(elytraRenderDistance);
 //        getLogger().info(player.getName() + " is flying, set render|simulation distance to " + elytraRenderDistance);
-    }
-
-    @Override
-    public void onDisable() {
-        Logger logger = this.getLogger();
-        logger.info("disabled");
     }
 }
