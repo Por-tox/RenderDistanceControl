@@ -46,9 +46,6 @@ public final class RenderDistanceControl extends JavaPlugin {
             @EventHandler
             public void onPlayerMove(PlayerMoveEvent event) {
                 Player player = event.getPlayer();
-                if (player.hasMetadata("isAfk")) {
-                    player.removeMetadata("isAfk", RenderDistanceControl.this);
-                }
                 if (player.isGliding() && !player.hasMetadata("isGliding")) {
                     plugin.setElytraViewDistance(player);
                     player.setMetadata("isGliding", new FixedMetadataValue(plugin, true));
